@@ -1,0 +1,55 @@
+Django:
+
+Django is a python Frame Work used to build websites quickly & easily. It provides many built in features(like templates, admin, Database, ORM).It follows Secure way to store & retrieve data .We can integrate it with the other tools like RESTAPI. For large Scale application Django is one of the Most chosen one. Django follows an approach  that is Batteries-included which means it  provides every thing that needed to build a web application without depending on other 3rd part libraries.
+
+Django Follows MVT Architecture
+
+Model: Handles the database, defines structure, and manages data. It  act as the interface of your data. It  is represented by a database(sqllite3,postgres).
+Modules in Django is to store data in the database conveniently. Stored in modes.py. Models ORM to interact with DB.
+
+View: Python functions/classes that handle requests and return responses to the users. Fetches data from models and passes it through Templates.
+
+Templates:HTML files that define how data is displayed. It controls the UI. Stored in Static Folders .It Displays the Data received from the views.
+
+
+FILES IN DJANGO:
+
+manage.py:
+used to interact with the Django project. Runs commands(runserver,makemigration,migrat).It is a server which is used to run our project.
+
+settings.py:
+In project file .It contains all the settings & configurations of Django project(DB,Installed apps,etc)
+
+urls.py:
+In project file. It is used to map the url/routing request to views. it contains url, name, functions call.
+
+wsgi.py:
+In project files. It is the Web server gateway interface. Gunicorn mainly used for deploying Django project.In Synchronous way.
+
+asgi.py:
+In project files. It is Asynchronous server gateway interface . Simular wsgi used for long-lived connections like websockets. 
+
+models.py:
+In App used to define the Database  Models(table) in the Django project.
+
+
+views.py:
+In App contains all views that handle the logic for processing a request & returning a response.
+
+templates:
+in App/It is a Folder which will contain all the Html files needed for the Django project.
+
+static:
+It is also similar the templates it is  a folder located in the project which contains files like css, js & images used by the HTML {%static'---------'%}
+
+test.py:
+In App it is a file which is used to do unit level testing.
+
+admin.py:
+In Apps it is used to register the models of Django Admin user after creating a superuser
+
+migrations:
+Migrations in Django are a way to apply changes to the database schema (tables, fields, relationships) whenever you modify your models.
+ 
+
+

@@ -1,0 +1,31 @@
+Angular:
+  Angular is a open-source frontend framework developed by Goole.IT is mainly used to build dynamic, single-page web application with component-based architecture.
+
+Angular can be used along with TypeScript.
+
+In Angular the code can be reusable as Components.
+
+Angular manages the Services efficiently.
+
+Angular is Suitable for large-scale applications.
+
+In Angular Data Binding is Two-way. not in others
+
+Angular is a Full Framework.
+
+Angular compiles templates during the build process (Ahead-of-Time),reducing the load time. where other languages are runtime.
+
+
+Since angular is AOT compilation & sanitization features protect against: XSS Injection Attacks.
+
+Angular is Developed by Google so it is reliable for long-term projects.
+
+
+Angular follows a component-based architecture and is built on the Module-View-Controller(MVC) patterns.
+
+Modules contains the Services & Models. API calls, DB handling. 
+
+View contains the HTML wit TS.UI.
+
+controller manages interactions B/W Model & View.
+

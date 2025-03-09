@@ -1,0 +1,30 @@
+Fast API:
+
+Fast API is a modern, fast (high-performance), web framework for building APIs with Python.It is designed for speed, simplicity, and automatic documentation.
+
+
+In app Fast API app is the main point of  interaction of application with the client browser.
+
+it return a JSON response.It can return dict, list, string, int, etc.
+
+Unicorn:
+FAST API uses this as a server used to listen to client request.
+Unlike flask Fast API doesn't contain any built-in development server. So we use Unicorn  to implement ASGI standard and it is Lightning fast. It is Low Latency
+
+
+Example program:
+
+from fasiapi FASTAPI
+app.get=FastAPI()
+@app("/")
+def root():
+	return{"message" : "hello-world"}
+
+o/p:
+{"message" : "hello-world"}
+
+ReDoc
+ReDoc is an auto-generated API documentation tool in FastAPI, built using OpenAPI (Swagger). It provides a clean, user-friendly UI for exploring and testing API endpoints.
+
+Fastapi uses async so it will be faster than the other frameworks like flask,Django.
+
