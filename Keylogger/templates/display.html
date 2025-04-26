@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Captured Data</title>
+    <meta http-equiv="refresh" content="5"> <!-- Auto-refresh every 5 seconds -->
+</head>
+<body>
+    <h1>Captured Key and Mouse Data</h1>
+
+    <h2>Keys Pressed:</h2>
+    <p>
+        {% for key in keys %}
+            <strong>{{ key }}</strong> 
+        {% endfor %}
+    </p>
+
+    <h2>Detailed Events:</h2>
+    <table border="1">
+        <tr>
+            <th>Type</th>
+            <th>Details</th>
+            <th>Time</th>
+        </tr>
+        {% for entry in data %}
+        <tr>
+            <td>{{ entry.type }}</td>
+            <td>
+                {% if entry.type == 'key' %}
+                    Key Pressed: {{ entry.key }}
+                {% elif entry.type == 'click' %}
+                    Click at ({{ entry.x }}, {{ entry.y }})
+                {% elif entry.type == 'move' %}
+                    Mouse moved to ({{ entry.x }}, {{ entry.y }})
+                {% endif %}
+            </td>
+            <td>{{ entry.time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
